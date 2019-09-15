@@ -1,0 +1,24 @@
+Spring Boot Microservicios
+
+Feing -> Cliente REST
+
+RestController (Añadir appConfig) Bean + Balanceo
+
+Ribbon -> Balanceo de carga (Se puede utilizar tanto con Feing como con RestController)
+servicio-productos.ribbon.listOfServers=localhost:8001,localhost:9001
+
+
+Eureka - Registrar microservicio sin tener que configurar puerto ni ip las aplicaciones se registran en Eureka Server
+	-jaxb no incluido en jdk a partir de la versión de java 8
+	-Se elimina ribbon de los clientes ya que viene implicito en Eureka
+	
+Hystrix -- Tolerancia a fallos Manejo de errores--Patron cicuit breaker.
+
+ZUUL --  Servidor APIGateWay enrutamiento dinamico Se puede configurar la seguridad en zuul y asi evitar tener que configurar cada una de las aplicaciones
+	-Filtros zuul	
+		Pre
+		Post
+		Route
+Spring Cloud Config - Permite tener una configuración de properties por cada entorno y tenerlo en git
+
+Spring actuator para refrescar configuraciones
