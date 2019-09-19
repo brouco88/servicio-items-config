@@ -22,3 +22,7 @@ ZUUL --  Servidor APIGateWay enrutamiento dinamico Se puede configurar la seguri
 Spring Cloud Config - Permite tener una configuración de properties por cada entorno y tenerlo en git
 
 Spring actuator para refrescar configuraciones
+
+Spring security JSON Web token cumple el estandar RFC 7519
+Framework de seguridad autentincacion y autorización ACL control de accesos a recursos
+
